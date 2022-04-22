@@ -74,7 +74,7 @@ namespace LoginWindow
         }
         private void ElUser1_PointerExited(object sender, PointerRoutedEventArgs e)
         {
-            ElUser1.Scale = new Vector3(1,1,1);
+            ElUser1.Scale = new Vector3(1, 1, 1);
         }
 
         private void ElUser2_PointerEntered(object sender, PointerRoutedEventArgs e)
@@ -87,11 +87,6 @@ namespace LoginWindow
         {
             ElUser2.Scale = new Vector3(1, 1, 1);
         }
-
-
-
-
-
 
         private void Menu1_PointerEntered(object sender, PointerRoutedEventArgs e)
         {

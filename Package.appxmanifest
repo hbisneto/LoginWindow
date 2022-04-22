@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="9dabfa1e-e996-4249-8966-2d349ddcfb83"
+    Name="8e46d16e-54d3-4e13-9cba-1ce7fe30233e"
     Publisher="CN=Heitor"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="9dabfa1e-e996-4249-8966-2d349ddcfb83" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="8e46d16e-54d3-4e13-9cba-1ce7fe30233e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>LoginWindow</DisplayName>

@@ -13,8 +13,10 @@
 
     <Grid>
 
-        <Pivot Title=""> <!-- LOGIN PAGE-->
-            <PivotItem Header=""> <!-- TODOS OS USUÁRIOS-->
+        <Pivot Title="">
+            <!-- LOGIN PAGE-->
+            <PivotItem Header="">
+                <!-- TODOS OS USUÁRIOS-->
 
                 <Grid Margin="0,50,0,0">
                     <ScrollViewer>
@@ -81,7 +83,7 @@
                                             </TextBlock>
                                         </Grid>
                                     </Grid>
-                                    
+
                                     <!-- Menu no Bottom-->
                                     <Grid x:Name="MenuOptions" Height="300" Width="400" Margin="0,100,0,0">
                                         <Grid.ColumnDefinitions>
@@ -121,7 +123,7 @@
                                                 </Ellipse.Fill>
                                             </Ellipse>
                                             <Ellipse x:Name="Menu2Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed"/>
-                                            
+
                                             <TextBlock 
                                                 Text="Menu2" 
                                                 FontSize="20" 
@@ -163,7 +165,7 @@
                                                 Margin="0,200,0,0">
                                             </TextBlock>
                                         </Grid>
-                                        
+
                                     </Grid>
 
                                 </StackPanel>
@@ -176,10 +178,12 @@
             </PivotItem>
 
 
-            <PivotItem Header=""> <!-- TODOS OS USUÁRIOS-->
+            <PivotItem Header="">
+                <!-- TODOS OS USUÁRIOS-->
                 <TextBlock Text="unread emails go here." />
             </PivotItem>
-            <PivotItem Header=""> <!-- TODOS OS USUÁRIOS-->
+            <PivotItem Header="">
+                <!-- TODOS OS USUÁRIOS-->
                 <TextBlock Text="flagged emails go here." />
             </PivotItem>
             <PivotItem Header="">
