@@ -1,9 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Numerics;
 using Windows.UI.Composition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -18,6 +21,26 @@ namespace LoginWindow
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void User1InitState()
+        {
+            ElUser1.Scale = new Vector3(1, 1, 1);
+            User1Selection.Scale = new Vector3(1, 1, 1);
+            User1Selection.Visibility = Visibility.Collapsed;
+        }
+
+        private void User2InitState()
+        {
+            ElUser2.Scale = new Vector3(1, 1, 1);
+            User2Selection.Scale = new Vector3(1, 1, 1);
+            User2Selection.Visibility = Visibility.Collapsed;
+        }
+
+        private void InitState()
+        {
+            User1InitState();
+            User2InitState();
         }
 
         // NOTE: The rectangle scales up and down using the same element_PointerEntered/Exited events as the prior sample.
@@ -72,8 +95,17 @@ namespace LoginWindow
         }
         private void ElUser1_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
+            BitmapImage userIcon = new BitmapImage();
+            
             User1Selection.Visibility = Visibility.Visible;
             UserPicker.SelectedIndex = 1;
+            UserName.Text = "Heitor Bisneto"; // Nome do Usuário
+            UserNameShadow.Text = UserName.Text;
+
+            userIcon = new BitmapImage(new Uri("ms-appx:///Assets/Icons/User1.jpg")); // Local da imagem do usuário
+            UserImgContainer.ImageSource = userIcon;
+
+            InitState();
         }
 
         private void User1Selection_PointerExited(object sender, PointerRoutedEventArgs e)
@@ -101,7 +133,17 @@ namespace LoginWindow
 
         private void ElUser2_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
+            BitmapImage userIcon = new BitmapImage();
+
+            UserPicker.SelectedIndex = 1;
             User2Selection.Visibility = Visibility.Visible;
+            UserName.Text = "/.admin2"; // Nome do Usuário
+            UserNameShadow.Text = UserName.Text;
+
+            userIcon = new BitmapImage(new Uri("ms-appx:///Assets/Icons/User2.jpg")); // Local da imagem do usuário
+            UserImgContainer.ImageSource = userIcon;
+
+            InitState();
         }
 
         private void User2Selection_PointerExited(object sender, PointerRoutedEventArgs e)
@@ -143,6 +185,11 @@ namespace LoginWindow
         private void Menu3Hover_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             Menu3Hover.Visibility = Visibility.Collapsed;
+        }
+
+        private void GoBackButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            UserPicker.SelectedIndex = 0;
         }
     }
 }

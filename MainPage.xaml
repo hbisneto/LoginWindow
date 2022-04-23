@@ -101,14 +101,14 @@
                                     </Grid>
 
                                     <!-- Menu no Bottom-->
-                                    <Grid x:Name="MenuOptions" Height="300" Width="400" Margin="0,100,0,0">
+                                    <Grid x:Name="MenuOptions" Height="auto" Width="400" Margin="0,100,0,0">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*"/>
                                             <ColumnDefinition Width="*"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <Grid Margin="10,0,10,0">
+                                        <Grid Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu1" Height="50" Width="50" PointerEntered="Menu1_PointerEntered">
                                                 <Ellipse.Fill>
                                                     <ImageBrush ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
@@ -116,23 +116,23 @@
                                             </Ellipse>
                                             <Ellipse x:Name="Menu1Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed" PointerExited="Menu1Hover_PointerExited"/>
                                             <TextBlock 
-                                                Text="Menu1" 
+                                                Text="Colaboradores" 
                                                 FontSize="20" 
                                                 TextAlignment="Center"
                                                 Foreground="Black"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
                                             <TextBlock 
-                                                Text="Menu1" 
+                                                Text="Colaboradores" 
                                                 FontSize="20" 
                                                 TextAlignment="Center"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                             </TextBlock>
                                         </Grid>
-                                        <Grid Grid.Column="1" Margin="10,0,10,0">
+                                        <Grid Grid.Column="1" Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu2" Height="50" Width="50" PointerEntered="Menu2_PointerEntered">
                                                 <Ellipse.Fill>
                                                     <ImageBrush ImageSource="/Assets/Icons/User2.jpg" Stretch="UniformToFill"/>
@@ -145,7 +145,7 @@
                                                 FontSize="20" 
                                                 TextAlignment="Center"
                                                 Foreground="Black"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
@@ -154,10 +154,10 @@
                                                 Text="Menu2" 
                                                 FontSize="20" 
                                                 TextAlignment="Center"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                             </TextBlock>
                                         </Grid>
-                                        <Grid Grid.Column="2" Margin="10,0,10,0">
+                                        <Grid Grid.Column="2" Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu3" Height="50" Width="50" PointerEntered="Menu3_PointerEntered">
                                                 <Ellipse.Fill>
                                                     <ImageBrush ImageSource="/Assets/Icons/User2.jpg" Stretch="UniformToFill"/>
@@ -169,7 +169,7 @@
                                                 FontSize="20" 
                                                 TextAlignment="Center"
                                                 Foreground="Black"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
@@ -178,7 +178,7 @@
                                                 Text="Menu3" 
                                                 FontSize="20" 
                                                 TextAlignment="Center"
-                                                Margin="0,200,0,0">
+                                                Margin="0,150,0,0">
                                             </TextBlock>
                                         </Grid>
                                     </Grid>
@@ -209,10 +209,11 @@
                                                     <Vector3Transition/>
                                                 </Ellipse.TranslationTransition>
                                                 <Ellipse.Fill>
-                                                    <ImageBrush ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
+                                                    <ImageBrush x:Name="UserImgContainer" ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
                                                 </Ellipse.Fill>
                                             </Ellipse>
                                             <TextBlock 
+                                                x:Name="UserName"
                                                 Text="User 1" 
                                                 FontSize="30" 
                                                 TextAlignment="Center"
@@ -223,6 +224,7 @@
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
                                             <TextBlock
+                                                x:Name="UserNameShadow"
                                                 Text="User 1" 
                                                 FontSize="30" 
                                                 TextAlignment="Center"
@@ -237,7 +239,7 @@
                                         </Grid.ColumnDefinitions>
 
                                         <Grid>
-                                            <Button Content="Back" HorizontalAlignment="Right"/>
+                                            <Button x:Name="GoBackButton" Content="Back" HorizontalAlignment="Right" Tapped="GoBackButton_Tapped"/>
                                         </Grid>
                                         
                                         <Grid Grid.Column="2">
