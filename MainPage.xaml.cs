@@ -99,7 +99,7 @@ namespace LoginWindow
             
             User1Selection.Visibility = Visibility.Visible;
             UserPicker.SelectedIndex = 1;
-            UserName.Text = "Heitor Bisneto"; // Nome do Usuário
+            UserName.Text = "/.admin1"; // Nome do Usuário
             UserNameShadow.Text = UserName.Text;
 
             userIcon = new BitmapImage(new Uri("ms-appx:///Assets/Icons/User1.jpg")); // Local da imagem do usuário
@@ -188,6 +188,16 @@ namespace LoginWindow
         }
 
         private void GoBackButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            UserPicker.SelectedIndex = 0;
+        }
+
+        private void Menu1Hover_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            UserPicker.SelectedIndex = 2;
+        }
+
+        private void UserCancalLoginButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             UserPicker.SelectedIndex = 0;
         }

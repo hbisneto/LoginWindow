@@ -39,30 +39,18 @@
                                                     <ImageBrush ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
                                                 </Ellipse.Fill>
                                             </Ellipse>
-                                            <TextBlock 
-                                                Text="User 1" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,250,0,0">
+                                            <TextBlock Text="/.admin1" FontSize="30" TextAlignment="Center" Foreground="Black" Margin="0,250,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
-                                            <TextBlock 
-                                                x:Name="User1Label"
-                                                Text="User 1" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Margin="0,250,0,0">
-                                            </TextBlock>
+                                            <TextBlock x:Name="User1Label" Text="/.admin1" FontSize="30" TextAlignment="Center" Margin="0,250,0,0"/>
 
                                             <Ellipse x:Name="User1Selection" Fill="#000000" Opacity="0.3" Height="100" Width="100" Visibility="Collapsed" PointerExited="User1Selection_PointerExited">
                                                 <Ellipse.TranslationTransition>
                                                     <Vector3Transition/>
                                                 </Ellipse.TranslationTransition>
                                             </Ellipse>
-
 
                                         </Grid>
                                         <Grid Grid.Column="1" Margin="10,0,10,0">
@@ -74,22 +62,12 @@
                                                     <ImageBrush ImageSource="/Assets/Icons/User2.jpg" Stretch="UniformToFill"/>
                                                 </Ellipse.Fill>
                                             </Ellipse>
-                                            <TextBlock 
-                                                Text="User 2" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,250,0,0">
+                                            <TextBlock Text="/.admin2" FontSize="30" TextAlignment="Center" Foreground="Black" Margin="0,250,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
-                                            <TextBlock 
-                                                Text="User 2" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Margin="0,250,0,0">
-                                            </TextBlock>
+                                            <TextBlock Text="/.admin2" FontSize="30" TextAlignment="Center" Margin="0,250,0,0"/>
 
                                             <Ellipse x:Name="User2Selection" Fill="#000000" Opacity="0.3" Height="100" Width="100" Visibility="Collapsed" PointerExited="User2Selection_PointerExited">
                                                 <Ellipse.TranslationTransition>
@@ -111,26 +89,16 @@
                                         <Grid Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu1" Height="50" Width="50" PointerEntered="Menu1_PointerEntered">
                                                 <Ellipse.Fill>
-                                                    <ImageBrush ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
+                                                    <ImageBrush ImageSource="/Assets/Icons/UserIcon.png" Stretch="UniformToFill"/>
                                                 </Ellipse.Fill>
                                             </Ellipse>
-                                            <Ellipse x:Name="Menu1Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed" PointerExited="Menu1Hover_PointerExited"/>
-                                            <TextBlock 
-                                                Text="Colaboradores" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,150,0,0">
+                                            <Ellipse x:Name="Menu1Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed" PointerExited="Menu1Hover_PointerExited" PointerPressed="Menu1Hover_PointerPressed"/>
+                                            <TextBlock Text="Colaboradores" FontSize="20" TextAlignment="Center" Foreground="Black" Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
-                                            <TextBlock 
-                                                Text="Colaboradores" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Margin="0,150,0,0">
-                                            </TextBlock>
+                                            <TextBlock Text="Colaboradores" FontSize="20" TextAlignment="Center" Margin="0,150,0,0"/>
                                         </Grid>
                                         <Grid Grid.Column="1" Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu2" Height="50" Width="50" PointerEntered="Menu2_PointerEntered">
@@ -140,22 +108,12 @@
                                             </Ellipse>
                                             <Ellipse x:Name="Menu2Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed" PointerExited="Menu2Hover_PointerExited"/>
 
-                                            <TextBlock 
-                                                Text="Menu2" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,150,0,0">
+                                            <TextBlock Text="Menu2" FontSize="20" TextAlignment="Center" Foreground="Black" Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
-                                            <TextBlock 
-                                                Text="Menu2" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Margin="0,150,0,0">
-                                            </TextBlock>
+                                            <TextBlock Text="Menu2" FontSize="20" TextAlignment="Center" Margin="0,150,0,0"/>
                                         </Grid>
                                         <Grid Grid.Column="2" Margin="0,0,0,0">
                                             <Ellipse x:Name="Menu3" Height="50" Width="50" PointerEntered="Menu3_PointerEntered">
@@ -164,22 +122,12 @@
                                                 </Ellipse.Fill>
                                             </Ellipse>
                                             <Ellipse x:Name="Menu3Hover" Fill="#000000" Opacity="0.3" Height="50" Width="50" Visibility="Collapsed" PointerExited="Menu3Hover_PointerExited"/>
-                                            <TextBlock 
-                                                Text="Menu3" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,150,0,0">
+                                            <TextBlock Text="Menu3" FontSize="20" TextAlignment="Center" Foreground="Black" Margin="0,150,0,0">
                                                 <TextBlock.RenderTransform>
                                                     <TranslateTransform X="3" Y="3" />
                                                 </TextBlock.RenderTransform>
                                             </TextBlock>
-                                            <TextBlock 
-                                                Text="Menu3" 
-                                                FontSize="20" 
-                                                TextAlignment="Center"
-                                                Margin="0,150,0,0">
-                                            </TextBlock>
+                                            <TextBlock Text="Menu3" FontSize="20" TextAlignment="Center" Margin="0,150,0,0"/>
                                         </Grid>
                                     </Grid>
                                 </StackPanel>
@@ -192,61 +140,36 @@
 
             <PivotItem Header="">
                 <!-- USUÁRIO 1 Login-->
-                <Grid Margin="0,50,0,0">
+                <Grid Margin="0,-200,0,0">
                     <ScrollViewer>
                         <StackPanel VerticalAlignment="Center">
                             <Grid HorizontalAlignment="Center" Width="auto">
                                 <StackPanel>
 
-                                    <Grid Height="auto" Width="400" Margin="0,-300,0,0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-
-                                        <Grid Margin="10,0,10,0">
-                                            <Ellipse Height="100" Width="100" Scale="1,1,1">
-                                                <Ellipse.TranslationTransition>
-                                                    <Vector3Transition/>
-                                                </Ellipse.TranslationTransition>
-                                                <Ellipse.Fill>
-                                                    <ImageBrush x:Name="UserImgContainer" ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
-                                                </Ellipse.Fill>
-                                            </Ellipse>
-                                            <TextBlock 
-                                                x:Name="UserName"
-                                                Text="User 1" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Foreground="Black"
-                                                Margin="0,250,0,0">
-                                                <TextBlock.RenderTransform>
-                                                    <TranslateTransform X="3" Y="3" />
-                                                </TextBlock.RenderTransform>
-                                            </TextBlock>
-                                            <TextBlock
-                                                x:Name="UserNameShadow"
-                                                Text="User 1" 
-                                                FontSize="30" 
-                                                TextAlignment="Center"
-                                                Margin="0,250,0,0">
-                                            </TextBlock>
-                                        </Grid>
+                                    <Grid Margin="0,0,0,0">
+                                        <Ellipse Height="100" Width="100" Scale="1,1,1">
+                                            <Ellipse.TranslationTransition>
+                                                <Vector3Transition/>
+                                            </Ellipse.TranslationTransition>
+                                            <Ellipse.Fill>
+                                                <ImageBrush x:Name="UserImgContainer" ImageSource="/Assets/Icons/User1.jpg" Stretch="UniformToFill"/>
+                                            </Ellipse.Fill>
+                                        </Ellipse>
+                                        <TextBlock x:Name="UserName" Text="User 1" FontSize="30" TextAlignment="Center" Foreground="Black" Margin="0,250,0,0">
+                                            <TextBlock.RenderTransform>
+                                                <TranslateTransform X="3" Y="3" />
+                                            </TextBlock.RenderTransform>
+                                        </TextBlock>
+                                        <TextBlock x:Name="UserNameShadow" Text="User 1" FontSize="30" TextAlignment="Center" Margin="0,250,0,30"/>
                                     </Grid>
-                                    <Grid Height="auto" Width="500" Margin="0,0,0,0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="150"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-
-                                        <Grid>
-                                            <Button x:Name="GoBackButton" Content="Back" HorizontalAlignment="Right" Tapped="GoBackButton_Tapped"/>
-                                        </Grid>
                                         
-                                        <Grid Grid.Column="2">
-                                            <PasswordBox PlaceholderText="Insira sua senha" InputScope="Password" HorizontalAlignment="Left" Width="250"/>
-                                        </Grid>
+                                    <PasswordBox PlaceholderText="Insira sua senha" InputScope="Password" HorizontalAlignment="Left" Width="300" Margin="0,0,0,10"/>
+                                    
+                                    <Grid>
+                                        <Button x:Name="GoBackButton" Content="Cancelar" Tapped="GoBackButton_Tapped"/>
+                                        <Button Content="Login" HorizontalAlignment="Right"/>
                                     </Grid>
-
+                                    
                                 </StackPanel>
                             </Grid>
                         </StackPanel>
@@ -257,7 +180,44 @@
             </PivotItem>
             <PivotItem Header="">
                 <!-- TODOS OS USUÁRIOS-->
-                <TextBlock Text="ITEM 1" />
+                <Grid Margin="0,50,0,0">
+                    <ScrollViewer>
+                        <StackPanel VerticalAlignment="Center">
+                            <Grid HorizontalAlignment="Center" Width="500">
+                                <StackPanel>
+                                    <Ellipse Height="100" Width="100" Scale="1,1,1" Margin="0,0,0,50">
+                                        <Ellipse.TranslationTransition>
+                                            <Vector3Transition/>
+                                        </Ellipse.TranslationTransition>
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/Assets/Icons/UserIcon.png" Stretch="UniformToFill"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                    <TextBlock Text="UserName" Foreground="Black" FontSize="30" HorizontalAlignment="Center">
+                                        <TextBlock.RenderTransform>
+                                            <TranslateTransform X="3" Y="3" />
+                                        </TextBlock.RenderTransform>
+                                    </TextBlock>
+                                    <TextBlock Text="UserName" FontSize="30" HorizontalAlignment="Center" Margin="0,-40,0,15"/>
+                                    <TextBox x:Name="Username" PlaceholderText="Usuário" FontSize="20" Width="400" Margin="0,0,0,30"/>
+
+                                    <TextBlock Text="Senha" Foreground="Black" FontSize="30" HorizontalAlignment="Center">
+                                        <TextBlock.RenderTransform>
+                                            <TranslateTransform X="3" Y="3" />
+                                        </TextBlock.RenderTransform>
+                                    </TextBlock>
+                                    <TextBlock Text="Senha" FontSize="30" HorizontalAlignment="Center" Margin="0,-40,0,15"/>
+                                    
+                                    <PasswordBox x:Name="AccessCode" PlaceholderText="Senha" FontSize="20" Width="400" Margin="0,0,0,30"/>
+                                    <Grid>
+                                        <Button x:Name="UserCancalLoginButton" Content="Cancelar" Margin="50,0,0,0" Tapped="UserCancalLoginButton_Tapped" />
+                                        <Button x:Name="UserLoginButton" Content="Entrar..." HorizontalAlignment="Right" Margin="0,0,50,0"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
             </PivotItem>
             <PivotItem Header="">
                 <TextBlock Text="ITEM 2" />

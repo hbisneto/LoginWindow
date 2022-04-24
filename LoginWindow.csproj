@@ -133,6 +133,7 @@
     <Content Include="Assets\Icons\Background.jpg" />
     <Content Include="Assets\Icons\User1.jpg" />
     <Content Include="Assets\Icons\User2.jpg" />
+    <Content Include="Assets\Icons\UserIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
